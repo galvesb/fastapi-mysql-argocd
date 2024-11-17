@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-mysql-argocd
+  labels:
+    app: "fastapi-mysql-argocd"
+spec:
+  selector:
+    matchLabels:
+      app: "fastapi-mysql-argocd"
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: "fastapi-mysql-argocd"
+    spec:
+      containers:
+        - name: "fastapi-mysql-argocd"
+          image: "fastapi-mysql-argocd-k8s"
+          resources:
+            requests:
+              cpu: "0.05"
+              memory: 70Mi 
+            limits:
+              cpu: "0.1"
+              memory: 512Mi
