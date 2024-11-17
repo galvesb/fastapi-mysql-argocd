@@ -15,7 +15,7 @@ spec:
         app: "fastapi-mysql-argocd"
     spec:
       containers:
-        - name: "fastapi-mysql-argocd"
+        - name: "fastapi-mysql-argocd-k8s"
           image: "fastapi-mysql-argocd-k8s"
           resources:
             requests:
