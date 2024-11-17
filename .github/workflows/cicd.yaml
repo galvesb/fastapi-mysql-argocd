@@ -31,7 +31,7 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         run: |
           cd k8s
-            kustomize edit set image fastapi-argocd=$DOCKER_USERNAME/fastapi-mysql-argocd-k8s:${{ github.sha }}
+            kustomize edit set image fastapi-mysql-argocd=$DOCKER_USERNAME/fastapi-mysql-argocd-k8s:${{ github.sha }}
       
       - name: Commit
         run: |
