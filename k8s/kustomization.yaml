@@ -1,10 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 images:
 - name: fastapi-mysql-argocd
   newName: galvesb/fastapi-mysql-argocd-k8s
-  newTag: sadasd
+  newTag: 78e82ea2415ef64f4634ea0d4f0898eb2b6278a9
