@@ -5,6 +5,9 @@ resources:
 - service.yaml
 
 images:
+- name: fastapi-mysql-argocd
+  newName: galvesb/fastapi-mysql-argocd-k8s
+  newTag: 9253d60d248906ae8be9c020dbb61e67192850ae
 - name: fastapi-mysql-argocd-k8s
   newName: galvesb/fastapi-mysql-argocd-k8s
   newTag: 78e82ea2415ef64f4634ea0d4f0898eb2b6278a9
